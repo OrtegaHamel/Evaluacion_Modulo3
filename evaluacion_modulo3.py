@@ -1,3 +1,5 @@
+import os
+
 # Lista para almacenar las tareas
 tareas = []
 
@@ -75,6 +77,9 @@ def main():
             elif opcion == 4:
                 eliminar_tarea()
             elif opcion == 5:
+                evaluacion_de_modulo_3 = str(tareas)
+                os.system(f'echo "{evaluacion_de_modulo_3}" >> evaluacion_de_modulo_3.txt')
+                print("Tareas guardadas con éxito")
                 print("Saliendo del programa. Hasta luego.")
                 break
             else:
